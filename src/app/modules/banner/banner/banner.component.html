@@ -1,0 +1,21 @@
+<div class="carousel container-fluid">
+    <div class="row justify-content-center">
+        <div class="banner-view">
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide *ngFor="let slide of slidesStore" [id]="slide.id">
+                    <a href="{{slide.link}}">
+                        <img [src]="slide.src">
+                    </a>
+                    <div class="carousel-caption">
+                        <h3>{{slide.text1}}</h3>
+                        <p>{{slide.text2}}</p>
+                        <a id="{{slide.text3}}" class="banner-btn">{{slide.text3}}</a>
+                    </div>
+                </ng-template>
+                <!-- <ng-template carouselSlide>Slide 1</ng-template>  
+                <ng-template carouselSlide>Slide 2</ng-template>  
+                <ng-template carouselSlide>Slide 3</ng-template>   -->
+            </owl-carousel-o>
+        </div>
+    </div>
+</div>

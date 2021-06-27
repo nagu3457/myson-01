@@ -1,0 +1,492 @@
+<app-header></app-header>
+<div class="homepage comman-pages">
+    <section id="hero" class="animated bounceInLeft pt-50 pb-50"
+        style="background-color:#f1f1f1;background: linear-gradient(rgb(255, 255, 255), rgb(189, 213, 252));">
+        <div class="container">
+            <div class="itl teaser">
+                <div class="has-image">
+                    <div class="cmp-itl__image">
+                        <img src="/assets/img/new/DSO-9849.png" style="width: 100%;">
+                    </div>
+                    <div class="cmp-itl__content ">
+                        <div class="itl__contentHeight" style="height:px;">
+                            <h1 class="dc-text--headline">Ultimate software development</h1>
+                            <p>Professional outsourcing services team based in Bangalore with extensive experience in
+                                end-to-end software development.</p>
+                            <p>Increasing your business success with technology</p>
+                            <p>&nbsp;</p>
+                            <div (click)="goToPage('technology')" class="call2action inverse">Learn More</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-50 pb-50 animated fadeInUp" style="background: #f8f9fb;">
+        <div class="container">
+            <div class="webdeveloper-slider">
+                <div class="webdevslider-content text-center">
+                    <h2>Systematic Workflow</h2>
+                    <img class="align-self-center" data-aos="zoom-in" src="/assets/img/new/home/work_flow.gif"
+                        style="width: 100%;">
+                    <div class="xs-flex Workflow justify-content-center">
+                        <div class="col-md-4">
+                            <div class="sys_work_box" data-aos="flip-right">
+                                <h4>1. Analysis &amp; Planning</h4>
+                                <p>Our developer consults with the
+                                    client &amp; gathers all the required
+                                    information.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 line_top_pro" data-aos="zoom-in-down">
+                            <div class="sys_work_box">
+                                <h4>3. Development</h4>
+                                <p>We develop with perfection &amp;
+                                    precision robust, secure, and
+                                    user-friendly coding.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="sys_work_box" data-aos="zoom-in-up">
+                                <h4>5. Launch</h4>
+                                <p>The project is developed &amp; delivered
+                                    within a given time &amp; without
+                                    any bug.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="sys_work_box" data-aos="zoom-out-up">
+                                <h4>2. Designing</h4>
+                                <p>It involves complete designing &amp;
+                                    time estimation of workflow for
+                                    development.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="sys_work_box" data-aos="zoom-in-left">
+                                <h4>4. Testing</h4>
+                                <p>Necessary stage-wise testing
+                                    of the project is done to check
+                                    its reliability.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-50 pb-50 animated fadeInUp">
+        <div class="container">
+            <div class="webdeveloper-slider">
+                <div class="webdevslider-content">
+                    <h2>Software Development Services</h2>
+                    <p>We ensure that all our web development and mobile application development projects are not only
+                        engineered using the most cutting edge technologies, but also they're created through a
+                        human-centred design process.</p>
+                </div>
+                <div class="dev-list">
+                    <ul class="resp-tabs-list vert">
+                        <li class="resp-tab-item" [class.active]="mobileAppshow == 0" (click)="onClickshow('0')"
+                            aria-controls="tab_item-0">Web Application
+                        </li>
+                        <li class="resp-tab-item" [class.active]="mobileAppshow == 1" (click)="onClickshow('1')"
+                            aria-controls="tab_item-1">Mobile App</li>
+                        <li class="resp-tab-item" [class.active]="mobileAppshow == 2" (click)="onClickshow('2')"
+                            aria-controls="tab_item-2">Front-End Web Application Development</li>
+                        <li class="resp-tab-item" [class.active]="mobileAppshow == 3" (click)="onClickshow('3')"
+                            aria-controls="tab_item-3">Cloud Computing Services</li>
+                    </ul>
+                    <div class="resp-tabs-container vert">
+                        <div class="resp-accordion animated fadeInRight" [class.resp-tab-active]="mobileAppshow == 0"
+                            aria-controls="tab_item-0">
+                            <h2>Web Application Development Services</h2>
+                            <div>
+                                <p>We provide a full range of custom web application development services starting from
+                                    business analysis, UI/UX design, to front-end and back-end development, QA testing,
+                                    maintenance and support.</p>
+                                <ul class="checklist multiline">
+                                    <li><strong>Progressive web apps</strong></li>
+                                    <li><strong>Cross-platform apps</strong></li>
+                                    <li><strong>SPAs</strong></li>
+                                    <li><strong>Web portals</strong></li>
+                                    <li><strong>ERP systems</strong></li>
+                                    <li><strong>CRM systems</strong></li>
+                                </ul>
+                            </div>
+                            <!-- <div class="mobile-shadow">
+                                We are here to help build with in your budget web applications
+                            </div> -->
+                        </div>
+                        <div class="resp-accordion animated fadeInRight" [class.resp-tab-active]="mobileAppshow == 1"
+                            aria-controls="tab_item-1">
+                            <h2>Mobile Application Development Services </h2>
+                            <div>
+                                <p>we have been intensively working on the creation of mobile applications for iOS,
+                                    Android, Windows Phone - and utilizing different technologies and frameworks for
+                                    their realization (JavaScript, Angular, React Native, etc). Our
+                                    well-organized teamwork and deep understanding of customer requirements enables us
+                                    to develop top notch mobile applications on time and on budget.</p>
+                                <ul class="checklist multiline">
+                                    <li><strong>Native apps</strong></li>
+                                    <li><strong>Hybrid apps</strong></li>
+                                    <li><strong>Cross-platform apps</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="resp-accordion animated fadeInRight" [class.resp-tab-active]="mobileAppshow == 2"
+                            aria-controls="tab_item-2">
+                            <h2>CMS Websites</h2>
+                        </div>
+                        <div class="resp-accordion animated fadeInRight" [class.resp-tab-active]="mobileAppshow == 3"
+                            aria-controls="tab_item-3">
+                            <h2>Cloud Computing Services</h2>
+                            <div>
+                                <p>Cloud application development services we provide are performed by our team of highly
+                                    qualified, skilled and hardworking professionals. With over a decade of experience
+                                    in cloud-based app development, we deliver solutions that cater for the diverse
+                                    requirements of our clients.</p>
+                                <ul class="checklist multiline">
+                                    <li><strong>Amazon cloud application development</strong></li>
+                                    <li><strong>Azure cloud application development</strong></li>
+                                    <li><strong>Cloud computing architecture development</strong></li>
+                                    <li><strong>Migration to Cloud</strong></li>
+                                    <li><strong>SaaS development</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="has-image">
+                    <div class="cmp-itl__image">
+                        <img src="/assets/img/new/banner/custom-design-2.png">
+                    </div>
+                    <div class="cmp-itl__content ">
+                        <div class="itl__contentHeight" style="height:px;">
+                            <h1 class="dc-text--headline">Reliable small business website hosting guaranteed</h1>
+                            <p>Website hosting for small business is safe and easy with Web.com. We guarantee 99.9%
+                                uptime and offer an unlimited amount of storage and email accounts.</p>
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="animated our-goals fadeInUp pt-50 pb-50">
+        <div class="our-goals-content">
+            <h2 class="dc-text--headline">Our Goals</h2>
+            <ul class="goals">
+                <li
+                    style="background: url(/assets/img/new/icon/63122our_goals_icon1[1].png) no-repeat left top; background-size: 70px;">
+                    To offer all the advantage of an internal team combined with the benefits of working with an expert
+                    industry-specific technology partner.</li>
+                <li
+                    style="background: url(/assets/img/new/icon/56777our_goals_icon2[1].png) no-repeat left top; background-size: 70px;">
+                    To provide cost-efficient, fully managed, dedicated technical development teams, working in
+                    partnership to support your ongoing business challenges.</li>
+                <li
+                    style="background: url(/assets/img/new/icon/88915our_goals_icon3[1].png) no-repeat left top; background-size: 70px;">
+                    To continually innovate, problem-solve and exceed our partners expectations.</li>
+            </ul>
+        </div>
+    </section> -->
+    <div class="home-banner-view animated aos-animate fadeInUp">
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide *ngFor="let slide of slidesStore" [id]="slide.id">
+                <section id="banner2" data-id="section_580462309"
+                    class=" pt-50 pb-50 ptMobile-25 pbMobile-25 bgp-d-tl bgp-m-tl">
+                    <div class="container">
+                        <div class="itl teaser">
+                            <div class="has-image">
+                                <div class="cmp-itl__content ">
+                                    <div class="itl__contentHeight" style="height:px;">
+                                        <h1 style="color:#f1f1f1" class="dc-text--headline">{{slide.text1}}</h1>
+                                        <p style="color:#f1f1f1">{{slide.text2}}</p>
+                                        <p>&nbsp;</p>
+                                    </div>
+                                </div>
+                                <div data-aos="zoom-out-up" class="cmp-itl__image banner-scroll">
+                                    <img [src]="slide.src">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+    <!-- <section id="banner2" data-id="section_580462309" style="background-color: rgb(10, 20, 53);"
+        class=" pt-50 pb-50 ptMobile-25 pbMobile-25 bgp-d-tl bgp-m-tl">
+        <div class="container">
+            <div class="itl teaser">
+                <div class="has-image">
+                    <div class="cmp-itl__content ">
+                        <div class="itl__contentHeight" style="height:px;">
+                            <h1 class="dc-text--headline">DMP Analytics</h1>
+                            <p>Our team built a Big Data processing tool that allows the analytical team of a large
+                                corporation to load, process, and save big amounts of data to receive the most accurate
+                                and extended reports for worldwide brands. The platform uses AWS cloud solutions to
+                                increase data protection and decrease resources on physical servers at the same time.
+                            </p>
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="cmp-itl__image">
+                        <img src="/assets/img/new/banner/DMP_2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="banner2" data-id="section_580462309" style="background-color: rgb(141, 137, 163);"
+        class=" pt-50 pb-50 ptMobile-25 pbMobile-25 bgp-d-tl bgp-m-tl">
+        <div class="container">
+            <div class="itl teaser">
+                <div class="has-image">
+                    <div class="cmp-itl__content ">
+                        <div class="itl__contentHeight" style="height:px;">
+                            <h1 class="dc-text--headline">Web Deployment API</h1>
+                            <p>We developed an API for internal use in a large company that has over 100,000 employees
+                                worldwide. This solution automates particular tasks in a website deployment process. It
+                                helps specialists to deploy hundreds of PHP websites, track errors, copy databases, and
+                                perform other related actions quickly and effectively.</p>
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="cmp-itl__image">
+                        <img src="/assets/img/new/banner/Web_Deployment_API_2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="banner2" data-id="section_580462309" style="background-color: rgb(67, 13, 160);"
+        class=" pt-50 pb-50 ptMobile-25 pbMobile-25 bgp-d-tl bgp-m-tl">
+        <div class="container">
+            <div class="itl teaser">
+                <div class="has-image">
+                    <div class="cmp-itl__content ">
+                        <div class="itl__contentHeight" style="height:px;">
+                            <h1 class="dc-text--headline">Web Deployment API</h1>
+                            <p>We developed an API for internal use in a large company that has over 100,000 employees
+                                worldwide. This solution automates particular tasks in a website deployment process. It
+                                helps specialists to deploy hundreds of PHP websites, track errors, copy databases, and
+                                perform other related actions quickly and effectively.</p>
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="cmp-itl__image">
+                        <img src="/assets/img/new/banner/Hypeanalysis_1.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section id="hero" class=" pt-50 pb-50 animated fadeInUp" style="background-color:#FEEAED;">
+        <div class="container">
+            <div class="itl teaser">
+                <div class="has-image">
+                    <div class="cmp-itl__image">
+                        <img src="/assets/img/new/banner/custom-design-2.png">
+                    </div>
+                    <div class="cmp-itl__content ">
+                        <div class="itl__contentHeight" style="height:px;">
+                            <h1 class="dc-text--headline">Our Focus Areas</h1>
+                            <h2>Reliable small business website hosting guaranteed</h2>
+                            <p>Website hosting for small business is safe and easy with Web.com. We guarantee 99.9%
+                                uptime and offer an unlimited amount of storage and email accounts.</p>
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="banner2" data-id="section_580462309" data-aos-easing="ease"
+        class=" pt-50 pb-50 aos-animate aos-init animated fadeInUp">
+        <div class="insights">
+            <span class="block-title " data-aos="fade-right"></span>
+            <label class="cases__title-wrap " data-aos="fade-right">
+                <span class="insights__title bold">Insights</span>
+            </label>
+            <div class="insights__content-wrap">
+                <article class="insight__content " data-aos="zoom-in-down">
+                    <a class="image-wrapper" href="https://pattemdigital.com/insight/react-native-framework/"
+                        title="Strike the Right Cord with React Native">
+                        <img class="lozad" alt="Strike the Right Cord with React Native"
+                            src="/assets/img/new/home/home_Insights_Angular.png" data-loaded="true"></a>
+                    <section class="insight__desc">
+                        <header>
+                            <label class="insight__content--date">February, 2021</label>
+                        </header>
+                        <p>Build mobile and web apps using AngularJS</p>
+                        <footer>
+                            <a class="insight__cta" routerLink="/technology"
+                                title="Strike the Right Cord with React Native">Read More</a>
+                        </footer>
+                    </section>
+                </article>
+                <article class="insight__content " data-aos="flip-up">
+                    <a class="image-wrapper" href="https://pattemdigital.com/insight/why-choose-kotlin-over-java"
+                        title="Kotlin: The Best Laid Coding Genius">
+                        <img class="lozad" alt="Kotlin: The Best Laid Coding Genius"
+                            src="/assets/img/new/home/home_Insights_pwa.png" data-loaded="true"></a>
+                    <section class="insight__desc">
+                        <header>
+                            <label class="insight__content--date">January, 2021</label>
+                        </header>
+                        <p>Kotlin: The Best Laid Coding Genius </p>
+                        <footer>
+                            <a class="insight__cta" href="https://pattemdigital.com/insight/why-choose-kotlin-over-java"
+                                title="Kotlin: The Best Laid Coding Genius">Read More</a>
+                        </footer>
+                    </section>
+                </article>
+                <article class="insight__content " data-aos="zoom-in-down">
+                    <a class="image-wrapper" href="https://pattemdigital.com/insight/react-native-framework/"
+                        title="Strike the Right Cord with React Native">
+                        <img class="lozad" alt="Strike the Right Cord with React Native"
+                            src="/assets/img/new/home/home_Insights__React.png" data-loaded="true"></a>
+                    <section class="insight__desc">
+                        <header>
+                            <label class="insight__content--date">February, 2021</label>
+                        </header>
+                        <p>Strike the Right Cord with React Native </p>
+                        <footer>
+                            <a class="insight__cta" href="https://pattemdigital.com/insight/react-native-framework/"
+                                title="Strike the Right Cord with React Native">Read More</a>
+                        </footer>
+                    </section>
+                </article>
+                <article class="insight__content " data-aos="flip-up">
+                    <a class="image-wrapper" href="https://pattemdigital.com/insight/why-choose-kotlin-over-java"
+                        title="Kotlin: The Best Laid Coding Genius">
+                        <img class="lozad" alt="Kotlin: The Best Laid Coding Genius"
+                            src="/assets/img/new/home/home_Insights_pwa.png" data-loaded="true"></a>
+                    <section class="insight__desc">
+                        <header>
+                            <label class="insight__content--date">January, 2021</label>
+                        </header>
+                        <p>Kotlin: The Best Laid Coding Genius </p>
+                        <footer>
+                            <a class="insight__cta" href="https://pattemdigital.com/insight/why-choose-kotlin-over-java"
+                                title="Kotlin: The Best Laid Coding Genius">Read More</a>
+                        </footer>
+                    </section>
+                </article>
+                <article class="insight__content " data-aos="flip-down">
+                    <a class="image-wrapper" href="https://pattemdigital.com/insight/advantages-of-android-app"
+                        title="What Android Apps Bring to the Table?">
+                        <img class="lozad" alt="What Android Apps Bring to the Table?"
+                            src="/assets/img/new/home/home_Insights_Android_App.png" data-loaded="true"></a>
+                    <section class="insight__desc">
+                        <header>
+                            <label class="insight__content--date">January, 2021</label>
+                        </header>
+                        <p>What Android Apps Bring to the Table? </p>
+                        <footer>
+                            <a class="insight__cta" href="https://pattemdigital.com/insight/advantages-of-android-app"
+                                title="What Android Apps Bring to the Table?">Read More</a>
+                        </footer>
+                    </section>
+                </article>
+                <article class="insight__content " data-aos="zoom-in">
+                    <a class="image-wrapper" href="https://pattemdigital.com/insight/key-benefits-of-enterprise-ios"
+                        title="Win Hands Down with iOS Enterprise Apps">
+                        <img class="lozad" alt="Win Hands Down with iOS Enterprise Apps"
+                            src="/assets/img/new/home/home_Insights_iOS.png" data-loaded="true"></a>
+                    <section data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                        class="insight__desc">
+                        <header>
+                            <label class="insight__content--date">December, 2020</label>
+                        </header>
+                        <p>Win Hands Down with iOS Enterprise Apps</p>
+                        <footer>
+                            <a class="insight__cta bold"
+                                href="https://pattemdigital.com/insight/key-benefits-of-enterprise-ios"
+                                title="Win Hands Down with iOS Enterprise Apps">Read More</a>
+                        </footer>
+                    </section>
+                </article>
+            </div>
+        </div>
+        <div class="container">
+            <div class="itl teaser">
+                <div class="has-image">
+                    <div class="cmp-itl__content " data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
+                        <div class="itl__contentHeight" style="height:px;">
+                            <img src="/assets/img/new/icon/webapps.svg" alt="Web Applications" class="tech-icon">
+                            <h1 class="dc-text--headline">Web Applications</h1>
+                            <!-- Protect your website with expert service -->
+                            <p>Innovative solutions that fit the right tech for the right application. You'll get full
+                                support from our experts every step of the way.</p>
+                            <div (click)="goToPage('technology')" class="call2action">Learn More</div>
+                            <!-- <p>Don't take a gamble with your business online. Trust to keep your website online
+                                24/7 with our reliable services. Yyou'll get full support from our experts every step of the way.</p> -->
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="cmp-itl__image">
+                        <img src="/assets/img/new/banner/web_application.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background: #fcfcfc;" id="hero" class="pb-50">
+        <div class="container">
+            <div class="itl teaser">
+                <div class="has-image">
+                    <div class="cmp-itl__image">
+                        <img class="" src="/assets/img/new/banner/api-visual.png">
+                    </div>
+                    <div class="cmp-itl__content" data-aos="fade-down" data-aos-easing="linear"
+                        data-aos-duration="1500">
+                        <div class="itl__contentHeight" style="height:px;">
+                            <img src="/assets/img/new/icon/apis.svg" alt="Web Applications" class="tech-icon">
+                            <h1 class="dc-text--headline">API Integrations</h1>
+                            <p>Innovative solutions that fit the right tech for the right application. You'll get full
+                                support from our experts every step of the way.</p>
+                            <div (click)="goToPage('technology')" class="call2action">Learn More</div>
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hero" class="pb-50 pt-25 text-center insurtech-brain lets-connect">
+        <div class="insurtech-brain_animation">
+            <div class="text-center footer_insurtech-brain">
+                <img class="lms_telephone_img" src="/assets/img/new/robo-insurtech.png">
+            </div>
+        </div>
+        <div class="span12 insurtech-brain_shadow">
+            <img class="" src="/assets/img/new/oval_shape-insuretech.png">
+        </div>
+        <div class="itl teaser">
+            <h1>Looking for a Cognitive spring in your step?</h1>
+            <p class="et_pb_gutters3">We’ve got just the right tools.</p>
+            <div class="btn">let's contact</div>
+        </div>
+    </section>
+    <!-- <section id="hero" class="pb-50 lets-connect">
+        <div class="itl teaser text-center">
+            <h1>got a project?</h1>
+            <p class="et_pb_gutters3">Whether you need a new website or some help with your social media we are ready to
+                start the conversation.</p>
+            <div class="btn">let's contact</div>
+        </div>
+    </section> -->
+</div>
+<app-footer class="scotchy-footer"></app-footer>

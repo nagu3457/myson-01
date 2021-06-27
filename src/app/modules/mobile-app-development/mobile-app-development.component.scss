@@ -1,0 +1,151 @@
+section {
+    &.custom-bg {
+        background-color: var(--dc-theme-qua--light2);
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0px auto;
+        .has-image {
+            flex-direction: row-reverse;
+            display: flex;
+            align-items: center;
+            .mdc-theme-secondary, .mdc-theme-secondary a {
+                color: #1164f3;
+                color: var(--mdc-theme-secondary);
+                border-color: #1164f3;
+                border-color: var(--mdc-theme-secondary);
+            }
+            .cmp-itl__content, .cmp-itl__image {
+                -ms-flex-preferred-size: 50%;
+                flex-basis: 50%;
+                // padding-left: 15px;
+                img {
+                    // max-width: 100%;
+                    max-width: 500px;
+                    border-radius: 4px;
+                    display: block;
+                    margin: 0px auto;
+                }
+                .greeting__subtitle {
+                    color: #afb0c9;
+                    margin: 0 0 1.9em;
+                    letter-spacing: 1px;
+                }
+                .greeting__text {
+                    position: relative;
+                    margin: 0;
+                    padding-bottom: 3em;
+                    color: #0f0f49;
+                    &:after {
+                        left: 0;
+                        bottom: 0;
+                        width: 5em;
+                        height: 1px;
+                        content: "";
+                        position: absolute;
+                        background: #aaabcb;
+                    }
+                }
+            }
+            .dc-text--headline {
+                font-size: 2.75rem;
+                // line-height: 1.25;
+                color: #f95a28;
+                // color: #120037;
+            }
+        }
+        .greeting__content {
+            width: 43%;
+        }
+        .greeting__video {
+            width: 48%;
+        }
+    }
+}
+
+.container_custom {
+    width: 100%;
+    max-width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.seivice-subsec {
+    .service {
+        position: relative;
+        min-height: 500px;
+        padding: 80px 0;
+        width: 100%;
+        &:before {
+            position: absolute;
+            content: '';
+            right: 0;
+            top: 50%;
+            height: 100%;
+            width: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    }
+    .service-interaction-design {
+        background: url(/assets/img/new/home/service-ux1.png) no-repeat right top #f7f6f6;
+        background-size: contain;
+    }
+    .service-mobile-ux {
+        background: url(/assets/img/new/home/interaction-ux3.png) no-repeat right top #f7f6f6;
+        padding-bottom: 327px;
+        background-size: cover;
+    }
+    .service-wireframes {
+        background: url(/assets/img/new/home/wireframe.png) no-repeat left top #fff;
+        margin-top: 80px;
+        padding-top: 0;
+        background-size: contain !important;
+        .col-md-6 {
+            float: right;
+        }
+    }
+    .mobile-app-dev {
+        background: url(/assets/img/new/home/app_development.png) no-repeat left top #fff;
+        margin-top: 80px;
+        padding-top: 0;
+        background-size: contain !important;
+        .col-md-6 {
+            float: right;
+        }
+    }
+}
+
+.container_custom:before, .container_custom:after {
+    content: " ";
+    display: table;
+}
+
+.inner-banner {
+    position: relative;
+    .img {
+        display: none;
+    }
+    img {
+        display: block;
+        width: 100%;
+    }
+    .caption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        text-align: left;
+        margin-bottom: 20px;
+        // margin-top: 20px;
+        .col-md-offset-6 {
+            margin-left: 50%;
+        }
+    }
+}

@@ -1,0 +1,135 @@
+<div class="header-top">
+    <div class="col-md-12 header-bg">
+        <div class="col-md-3 no-padding">
+            <span class="mdl-layout-title">
+                <a class="site-header no-decoration mdl-navigation__link--title pointer" (click)="goToPage('home')" >
+                    <img class="main__logo" src="/assets/img/new/mnk-logo.svg" style="width: 80px;" alt="">
+                    <!-- logo -->
+                    <!-- <span class="microsite-name mdl-typography--font-light">CLI</span> -->
+                </a>
+            </span>
+        </div>
+        <div class="xs-flex col-md-8 top-nav-wrapper no-padding align-items-center justify-content-end">
+            <div class="col-md-2 mdl-navigation">
+                <div (click)="goToPage('aboutus')" [class.active]="router.url==('/aboutus')"
+                    class="mdl-navigation__link">Our Story</div>
+            </div>
+            <div class="col-md-2 mdl-navigation">
+                <div (click)="goToPage('technology')" [class.active]="router.url==('/technology')"
+                    class="mdl-navigation__link"> Technology </div>
+            </div>
+            <div class="col-md-2 mdl-navigation">
+                <div (click)="goToPage('ux-design')" [class.active]="router.url==('/ux-design')"
+                    class="mdl-navigation__link"> UX </div>
+            </div>
+            <div class="col-md-2 mdl-navigation">
+                <div (click)="goToPage('mobile-app-development')" [class.active]="router.url==('/mobile-app-development')"
+                    class="mdl-navigation__link"> App Development </div>
+            </div>
+            <div class="col-md-2 mdl-navigation">
+                <div (click)="goToPage('services')" [class.active]="router.url==('/services')"
+                    class="mdl-navigation__link">Services</div>
+            </div>
+            <div class="col-md-2 mdl-navigation">
+                <div (click)="goToPage('seo-services')" [class.active]="router.url==('/seo-services')"
+                    class="mdl-navigation__link">Digital Marketing</div>
+            </div>
+        </div>
+        <div class="col-md-2 enquire-btn" (click)="enquiryClick()">Let's build</div>
+    </div>
+</div>
+<div class="enquiry-form" [class.enquiry-open]="enquiryOpen">
+    <div (click)="enquiryClose()" class="close">Close <i class="fa fa-times-circle"></i></div>
+    <div class="form-outer">
+        <div class="container-custom1">
+            <div class="row">
+                <div class="col-md-6 form-col">
+                    <h4>We'd love to talk with you</h4>
+                    <p>Get in touch and build your idea today</p>
+                    <p>Brief us your requirements below, and let's connect</p>
+                    <div class="form">
+                        <form class="contact-form" method="post">
+                            <ul>
+                                <li class="icon fa user"><input type="text" name="name" required="" class="txt-box"
+                                        placeholder="Your Name"></li>
+                                <li class="icon fa envelope"><input type="email" name="email" required=""
+                                        class="txt-box email" placeholder="Email Address"></li>
+                                <li class="icon fa call"><input type="text" name="phone" class="txt-box"
+                                        placeholder="Phone"></li>
+                                <li class="icon fa speech message"><textarea name="message" required="" class="txt-area"
+                                        placeholder="Your Message"></textarea></li>
+                                <li>
+                                    <!--  <button type="submit" class="submit-btn">Send Message</button> -->
+                                    <input type="submit" name="submit" value="Send Message" class="submit-btn">
+                                    <input type="hidden" name="action" value="contactusform">
+                                    <span class="progress"></span>
+                                </li>
+                            </ul>
+                            <div class="status"></div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 enquiry-address">
+                    <ul class="list-f03">
+                        <li>
+                            <span><i class="fa fa-envelope"></i>Write to us</span>
+                            <a href="mailto:mnkCreatives@gmail.com"> mnkCreatives@gmail.com</a></li>
+                        <li>
+                            <span><i class="fa fa-skype"></i>Skype</span>
+                            <a href="skype:mnkCreatives"> mnkCreatives</a></li>
+                        <li>
+                            <span><i class="fa fa-phone-alt"></i>Telephone</span>
+                            <a href="tel:+919901418153"> +91 99 01 41 81 53</a></li>
+                    </ul>
+                    <div class="title"><i class="ion-ios-location"></i>Locate us</div>
+                    <div class="tab_container">
+                        <!-- <input id="enq_tab1" type="radio" name="tabs" checked="">
+                        <label for="enq_tab1" class="name"><span>Delhi</span></label>
+                        <input id="enq_tab3" type="radio" name="tabs">
+                        <label for="enq_tab3" class="name"><span>Mumbai</span></label>
+                        <input id="enq_tab4" type="radio" name="tabs">
+                        <label for="enq_tab4" class="name"><span>Bangalore</span></label>
+                        <input id="enq_tab2" type="radio" name="tabs">
+                        <label for="enq_tab2" class="name"><span>Calicut</span></label> -->
+                        <div id="enq_content1" class="tab-content">
+                            <h5>Bangalore - India</h5>
+                            <p>
+                                1101 - 11th Floor<br>JMD Megapolis, Sector-48<br> Gurgaon, Delhi NCR - India</p>
+                        </div>
+                        <!-- <div id="enq_content3" class="tab-content">
+                            <h5>Mumbai - India</h5>
+                            <p>
+                                1st floor, Urmi Corporate Park<br>
+                                Solaris (D) Opp. L&amp;T Gate No.6<br>
+                                Powai, Mumbai- 400072</p>
+                        </div>
+                        <div id="enq_content4" class="tab-content">
+                            <h5>Bangalore - India</h5>
+                            <p>
+                                #12, 100 Feet Road <br>
+                                Banaswadi,<br>
+                                Bangalore 5600432</p>
+                        </div>
+                        <div id="enq_content2" class="tab-content">
+                            <h5>Calicut - India</h5>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p>
+                                        UL CyberPark (SEZ) <br>
+                                        Nellikode (PO)<br> Kerala, India - 673 016.</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p>Westhill, Kozhikode<br>
+                                        Kerala - 673005<br>
+                                        India</p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

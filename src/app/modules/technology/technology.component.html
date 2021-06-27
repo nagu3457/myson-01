@@ -1,0 +1,397 @@
+<app-header></app-header>
+<div class="comman-pages service-cards">
+    <section
+        style="background: #EBEBEB;    background: linear-gradient(to right, rgb(246 186 153 / 65%), rgb(38 37 37 / 33%));"
+        class="fadeInDownBig animated pt-50 ">
+        <div class="tech-banner-view animated fadeInUp">
+            <owl-carousel-o [options]="technologyOptions">
+                <ng-template carouselSlide *ngFor="let slides of technologySlides" [id]="slides.id">
+                    <section class=" pt-50 pb-50 ">
+                        <div class="container homepage__hero__slide">
+                            <div class="carousel-item homepage__hero__slide homepage__hero__slide--productive">
+                                <img class="homepage__hero__image homepage__hero__image--layer-1" [src]="slides.image1">
+                                <img class="homepage__hero__image homepage__hero__image--layer-2" [src]="slides.image2">
+                                <img class="homepage__hero__image homepage__hero__image--layer-3" [src]="slides.image3">
+                                <h1 class="homepage__hero__text">{{slides.h1}} <span
+                                        class="color-white">{{slides.span}}</span> {{slides.h2}}</h1>
+                                <img class="homepage__hero__phone-bezel" [src]="slides.image4">
+                            </div>
+                        </div>
+                    </section>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </section>
+    <section class="fadeInDownBig animated pt-50 ">
+        <div class="container">
+            <div class="itl teaser">
+                <ul class="breadcrumb">
+                    <li><i class="fa ion-home"></i><a href="https://acodez.in/">Home</a></li>
+                    <li><a href="https://acodez.in/services">Technology</a></li>
+                    <li>Web Applications</li>
+                </ul>
+                <div class="has-image">
+                    <div class="cmp-itl__content greeting__content">
+                        <div class="itl__contentHeight" style="height:px;">
+                            <!-- WEB DEVELOPMENT FOR BUSINESS PROCESS AUTOMATION -->
+                            <h1 class="dc-text--headline">Web Applications</h1>
+                            <p class="greeting__subtitle">We use and provide the best web development software</p>
+                            <p class="greeting__text">To us, the web development process is fascinating, because each
+                                and every web developing project is a chance to create something interesting. Our vast
+                                experience in custom web application development had contributed to the formation and
+                                growth of different companies. Every
+                                web developer in our team understands that clients depend on the quality of their work,
+                                thus, put all efforts to give the best result possible.<br /><br />In developing
+                                front-end web
+                                applications, Mobile Wave Solutions always aims to be flexible in the type of language
+                                and architecture recommended and provided.</p>
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="cmp-itl__image greeting__video">
+                        <img src="/assets/img/new/banner/web.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="itl teaser">
+                <div class="has-image">
+                    <div class="cmp-itl__image greeting__video">
+                        <img src="/assets/img/new/banner/webapps-techs.png">
+                    </div>
+                    <div class="cmp-itl__content greeting__content">
+                        <div class="itl__contentHeight" style="height:px;">
+                            <!-- WEB DEVELOPMENT FOR BUSINESS PROCESS AUTOMATION -->
+                            <h1 class="dc-text--headline">Technologies Used</h1>
+                            <p>Our premise regarding the web development team is that we like to take on and grow
+                                web-specialists, i.e. developers who have skills and interest in web development across
+                                the board as opposed to one discipline or another.</p>
+                            <p>As a consequence we have cross-language skills around many of our front-end (and
+                                server-side) development teams: HTMl5 / CSS, React.js, node.js, Create.js, Pixi.js,
+                                Python.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fadeInDownBig animated pt-50 ">
+        <div class="container">
+            <div class="itl teaser">
+                <div class="has-image">
+                    <div class="cmp-itl__content greeting__content">
+                        <div class="itl__contentHeight" style="height:px;">
+                            <h1 class="dc-text--headline">API Integrations</h1>
+                            <!-- <p>The choice of which technology to use in determining your
+                                API/Integration architecture will be driven by the nature of the integration; its volume
+                                of activity; its time-sensitivity; the nature of the data packages to be passed; the
+                                nature of any ‘transformation’ of data needed to achieve the transit between platforms
+                                and, typically, database.</p> -->
+                            <p>“An application programming interface is a computing interface to a software component or
+                                a system, that defines how other components or systems can use it. It defines the kinds
+                                of calls or requests that can be made, how to make them, the data formats that should be
+                                used, the conventions to follow, etc.”</p>
+                            <ul class="checklist multiline">
+                                <li>
+                                    <strong>Full access to your latest tracking data: </strong>API endpoints are the
+                                    URLs that an API user communicates with in order to access a particular action in
+                                    that application.
+                                </li>
+                                <li>
+                                    <strong>Access to your very latest updates: </strong>Once an API is built and
+                                    published, it can interact with other APIs through the internet. Through the
+                                    connection of APIs, the software can communicate with one another.
+                                </li>
+                                <li><strong>Automation of essential functions: </strong>APIs are specific to an
+                                    application,
+                                    service, or function. The application is what an end user (whether that be a person
+                                    or another application) is trying to communicate with by way of an interface.
+                                </li>
+                            </ul>
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="cmp-itl__image greeting__video">
+                        <img src="/assets/img/new/banner/api-visual.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="itl teaser">
+                <div class="has-image">
+                    <div class="cmp-itl__image greeting__video">
+                        <img src="/assets/img/new/banner/apis-techs.png">
+                    </div>
+                    <div class="cmp-itl__content greeting__content">
+                        <div class="itl__contentHeight" style="height:px;">
+                            <!-- WEB DEVELOPMENT FOR BUSINESS PROCESS AUTOMATION -->
+                            <h1 class="dc-text--headline">Technologies Used</h1>
+                            <p>There are many languages that our teams have worked with regarding APIs and platform
+                                integrations and have established specialised teams covering languages such as Java,
+                                Python & Node js.</p>
+                            <p class="greeting__text">We work most typically with REST APIs and also, depending on
+                                customer requirements, SOAP.
+                                The choice of language and technology on communications should be responsive to the
+                                needs of your data transit (volume, speed, peaks, sensitivity, transformation).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background: #F7F7F8;" class="fadeInDownBig animated pt-50 ">
+        <div class="container">
+            <div class="itl teaser">
+                <div class="has-image">
+                    <div class="cmp-itl__content greeting__content">
+                        <div class="itl__contentHeight" style="height:px;">
+                            <!-- WEB DEVELOPMENT FOR BUSINESS PROCESS AUTOMATION -->
+                            <h1 class="dc-text--headline">Cloud Technologies</h1>
+                            <p class="greeting__subtitle">In supporting our customers, Mobile Wave Solutions consults
+                                to:</p>
+                            <ul class="custom-points">
+                                <li>define&nbsp;the core database/(virtual) server architecture;</li>
+                                <li>determine what additional functionality may be required in the development, build
+                                    and deployment processes plus;</li>
+                                <li>establish the best solution to provide the right level of capacity, flexibility and
+                                    speed of scalability in the most efficient and effective manner.</li>
+                            </ul>
+                            <p>Once defined, our teams can construct and manage the development and configuration of all
+                                the agreed services within those platforms and provide the management, monitoring and
+                                refinement support.</p>
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="cmp-itl__image greeting__video">
+                        <img src="/assets/img/new/banner/cloud-techs-bg.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="itl teaser">
+                <div class="has-image">
+                    <div class="cmp-itl__image greeting__video">
+                        <img src="/assets/img/new/banner/cloud-techs.png">
+                    </div>
+                    <div class="cmp-itl__content greeting__content">
+                        <div class="itl__contentHeight" style="height:px;">
+                            <!-- WEB DEVELOPMENT FOR BUSINESS PROCESS AUTOMATION -->
+                            <h1 class="dc-text--headline">Technologies Used</h1>
+                            <p>The Mobile Wave Solutions teams have set up from scratch AWS Cloud platforms across
+                                multiple stages of development environments (e.g. Dev; QA; UAT; Stage; Production).</p>
+                            <p>Amazon Web Services (AWS)</p>
+                            <p>Google Cloud Platform (GCP)</p>
+                            <p>Firebase Console</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="animated fadeInUp pb-50 solution-info ">
+        <div class="container">
+            <div class="card__content">
+                <header id="use-cases" class="card__header">
+                    <h2 class="card__heading" id="common-use-cases" data-text="Common use cases">Common use cases</h2>
+                    <p class="card__subheading">Use Firebase products together to solve complex challenges and optimize
+                        your app experience. Personalize your onboarding flow, grow user engagement, or add new
+                        functionality with Firebase.
+                    </p>
+                </header>
+                <div class="card__subpartial">
+                    <div class="fb-page-home"></div>
+                </div>
+                <div class="card__ctas">
+                    <div class="card__cta">
+                        <a data-category="useCases" data-action="linkClick" data-label="seeUseCases"
+                            class="cta-button gc-analytics-event">
+                            View use cases
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- angular -->
+    <section id="tech_angular" style="background: linear-gradient(193.03deg,#ecf4fe 10.6%,rgba(236,244,254,0) 155.51%);"
+        class="fadeInDownBig animated pt-50 ">
+        <div class="container">
+            <div class="itl teaser">
+                <h1>Why is AngularJS important for you?</h1>
+                <p>AngularJS application development is done using MVC Javascript which is an open source framework.
+                    Using this framework, we build cross-platform applications that work seamlessly across the web and
+                    mobile interfaces. Our solutions are platform-agnostic and future-ready.</p>
+                <p>From web applications to mobile prototypes, AngularJS is the ideal platform to build these
+                    solutions. Using modules, controllers, and providers, you can share the same code at multiple
+                    places.</p>
+                <ul class="checklist multiline">
+                    <li><strong>Simple and effective:</strong> Its lightweight design can help you create cross-platform
+                        or single-page applications with ease</li>
+                    <li><strong>Secure:</strong> It is the de facto choice of developers because of its emphasis on
+                        security</li>
+                    <li><strong>Easy to understand:</strong> It is easy to learn and implement</li>
+                    <li><strong>Universal appeal:</strong> Since it requires less time to be spent on coding, it has a
+                        universal appeal</li>
+                </ul>
+                <h1>Core Features of Angular</h1>
+                <p>Angular boasts an array of core features, making it a key competitor with the React framework.</p>
+                <h2>1. Two-way Data Binding</h2>
+                <p><strong>Angular automatically synchronizes data between the model and view components.</strong></p>
+                <p>This enables developers to seamlessly create interactive applications without worrying about manually
+                    pushing and pulling data.</p>
+                <p>For companies that use Angular, this translates to saved time and the cost of hiring an armed force
+                    of web developers just for the purpose of pushing and pulling data sources.</p>
+                <h2>2. Cross-Platform</h2>
+                <p><strong>The Angular framework allows companies to develop progressive web applications
+                        (PWA).</strong></p>
+                <p>By deploying PWA, developers can offer app-like experiences to their audience on their websites.</p>
+                <p>Angular also comes with their staple hybrid mobile software development kit (SDK) called Ionic. </p>
+                <p>Ionic allows developers to ship apps to the IOS app store, Google Playstore, and web application(s)
+                    simultaneously without having to hustle to create apps separately for each platform.</p>
+                <p>In the long run, this saves added time and effort, securing return on investment sooner rather than
+                    later.</p>
+                <h2>3. High-Speed Performance</h2>
+                <p><strong>By converting templates into clean semantic code, Angular redefines the modern JavaScript
+                        virtual machine.</strong></p>
+                <p>Angular leverages hand-written code to another level through high-speed page loading times and
+                    optimal rendering capabilities.</p>
+                <h2>4. Low Code Framework</h2>
+                <p><strong>In contrast to other front-end tech stacks, Angular was developed as a low code
+                        framework.</strong></p>
+                <p>Developers no longer need to exhaustively write separate code to link model-view-controller (MVC)
+                    layers.</p>
+                <p>Additionally, directives are isolated from the app code, minimizing development time.</p>
+                <div class="has-image">
+                    <div class="cmp-itl__content greeting__content">
+                        <div class="itl__contentHeight" style="height:px;">
+                            <!-- WEB DEVELOPMENT FOR BUSINESS PROCESS AUTOMATION -->
+                            <h1 class="dc-text--headline">Our AngularJS Services</h1>
+                            <p class="greeting__subtitle">We ensures complete project visibility right from the time you
+                                approach us with your needs. We use email, phone, Skype, Slack and other mediums for
+                                regular communication with our clients.</p>
+                            <ul class="custom-points">
+                                <li>Dynamic Web Application Development</li>
+                                <li>Upgrade and Maintenance</li>
+                                <li>Enterprise App Interface and Development</li>
+                                <li>Single Page Application</li>
+                                <li>Application Migration Services</li>
+                                <li>User Interactive Module Development</li>
+                                <li>Custom Widgets Development</li>
+                            </ul>
+                            <p>We employ the agile methodology to keep you in the loop. Throughout Angular web
+                                development and mobile development, we focus on delivering solutions that meet your
+                                business goals, timeline, and budget.</p>
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="cmp-itl__image greeting__video">
+                        <img src="/assets/img/new/tech/our-service-angular.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="angular-bg" style="background: url(/assets/img/new/tech/unit-testing.webp);">
+            <div class="container">
+                <div class="itl teaser pb-50 pt-50 text-center" align-center>
+                    <h1 style="color: #fff;">Unit Testing with AngularJS</h1>
+                    <p style="color: #fff;">Unit testing is performed on every single module by splitting them to surface their abstraction
+                        level. The unit testing describes the expected functionality and the behavior of the modules.
+                        AngularJS development services are reaping clean and error free applications using test
+                        environments which provide solid solutions for the enterprise requirements.</p>
+                    <div class="has-image">
+                        <div class="cmp-itl__content greeting__content">
+                            <div class="itl__contentHeight" style="height:px;">
+                                <h1 style="color: #fff;">Unit Testing with  Jasmine</h1>
+                                <p style="color: #fff;">It is the behavior driven development (BDD) framework 
+                                    for JavaScript. It works everywhere where JavaScript is
+                                     implemented. It keeps the tests well documented and 
+                                    structured. It does not require DOM and also is 
+                                    dependency free. </p>
+                            </div>
+                        </div>
+                        <div class="cmp-itl__image greeting__video">
+                            <img src="/assets/img/new/tech/TDD__Angular.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="col-md-4">
+            <figure class="product-box">
+                <a class="wishlist-icon">
+                    <i class="; fa fa-heart-o" id="wishlist_3602"></i>
+                </a>
+                <div class="prodcut-img fix-img-box">
+                    <a href="/bold-and-blue-patterned-indo-western-set-cpiw526-306">
+                        <img alt="Bold and Blue Patterned Indo Western Set" src="/assets/img/new/tech/2/magazine.png">
+                    </a>
+                </div>
+                <figcaption>
+                    <div class="inner-product-desc">
+                        <h2 class="product-title">Bold and Blue Patterned Indo Western Set</h2>
+                        <p class="product-price">
+                            <i class="rupee">`</i> 11999
+                        </p>
+                        <a class="btn" href="/bold-and-blue-patterned-indo-western-set-cpiw526-306">
+                            Shop Now
+                        </a>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="col-md-4">
+            <figure class="product-box">
+                <a class="wishlist-icon">
+                    <i class="; fa fa-heart-o" id="wishlist_3602"></i>
+                </a>
+                <div class="prodcut-img fix-img-box">
+                    <a href="/bold-and-blue-patterned-indo-western-set-cpiw526-306">
+                        <img alt="Bold and Blue Patterned Indo Western Set" src="/assets/img/new/tech/2/magazine.png">
+                    </a>
+                </div>
+                <figcaption>
+                    <div class="inner-product-desc">
+                        <h2 class="product-title">Bold and Blue Patterned Indo Western Set</h2>
+                        <p class="product-price">
+                            <i class="rupee">`</i> 11999
+                        </p>
+                        <a class="btn" href="/bold-and-blue-patterned-indo-western-set-cpiw526-306">
+                            Shop Now
+                        </a>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="col-md-4">
+            <figure class="product-box">
+                <a class="wishlist-icon">
+                    <i class="; fa fa-heart-o" id="wishlist_3602"></i>
+                </a>
+                <div class="prodcut-img fix-img-box">
+                    <a href="/bold-and-blue-patterned-indo-western-set-cpiw526-306">
+                        <img alt="Bold and Blue Patterned Indo Western Set" src="/assets/img/new/tech/2/magazine.png">
+                    </a>
+                </div>
+                <figcaption>
+                    <div class="inner-product-desc">
+                        <h2 class="product-title">Bold and Blue Patterned Indo Western Set</h2>
+                        <p class="product-price">
+                            <i class="rupee">`</i> 11999
+                        </p>
+                        <a class="btn" href="/bold-and-blue-patterned-indo-western-set-cpiw526-306">
+                            Shop Now
+                        </a>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

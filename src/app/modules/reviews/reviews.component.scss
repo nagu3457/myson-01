@@ -1,0 +1,79 @@
+.pb-150 {
+    padding-bottom: 150px;
+}
+.pt-100 {
+    padding-top: 75pt;
+}
+
+.container, .container1 {
+    max-width: 855pt;
+    margin: 0px auto;
+}
+
+h2 {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    color: #ffffff;
+}
+
+h3 {
+    font-size: 1.258rem;
+    color: #ffffff;
+}
+
+section {
+    padding-top: 5rem!important;
+    .container {
+        max-width: 855pt;
+        margin: 0px auto;
+        .has-image {
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+            text-align: inherit;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            display: flex;
+            .cmp-itl__content, .cmp-itl__image {
+                -ms-flex-preferred-size: 50%;
+                flex-basis: 50%;
+                padding-left: 15px;
+                img {
+                    max-width: 100%;
+                    border-radius: 4px;
+                    display: block;
+                }
+            }
+            .dc-text--headline {
+                font-size: 2.75rem;
+                line-height: 1.25;
+            }
+        }
+    }
+}
+
+.getintouch {
+    background-image: url(/assets/img/new/get_intpuch.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    .pt-100 {
+        padding-top: 75pt;
+    } 
+    .pb-50 {
+        padding-bottom: 50px;
+    }
+    h2 {
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+        color: #404040;
+    }
+    .dc-text--subhead {
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.58;
+        color: #404040;
+    }
+}

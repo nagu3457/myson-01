@@ -1,0 +1,119 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+    background: #0f0f0f;
+}
+.hero--750px {
+    height: 750px;
+}
+.hero.loaded.aos-animate .slideshow__slide.slick-active .hero__image--svg, .hero.loaded.aos-animate .slideshow__slide.slick-active .hero__image.lazyloaded, .hero.loaded.aos-animate .slideshow__slide.slick-active .hero__media, [data-aos=hero__animation].loaded.aos-animate .hero__image--svg, [data-aos=hero__animation].loaded.aos-animate .hero__image.lazyloaded, [data-aos=hero__animation].loaded.aos-animate .hero__media {
+    animation: zoom-fade 2.5s cubic-bezier(.26,.54,.32,1) 0s forwards;
+    transition: none;
+}
+.hero__image-wrapper:before, .hero__media:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    background-color: #000;
+    opacity: 0;
+}
+.hero__media-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.hero__media {
+    video {
+        display: inline-block;
+        vertical-align: baseline;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        position: relative;
+        object-fit: cover;
+    }
+}
+.hero__text-wrap {
+    position: relative;
+    height: 100%;
+    color: #fff;
+    .page-width {
+        display: table;
+        width: 100%;
+        height: 100%;
+        padding: 0 40px;
+        .vertical-center {
+            vertical-align: middle;
+        }
+        .hero__text-content {
+            display: table-cell;
+        }
+        .hero__title {
+            display: block;
+            margin-bottom: 0;
+            font-size: 40px;
+            .animation-cropper {
+                overflow: hidden;
+                display: -ms-inline-flexbox;
+                display: inline-flex;
+            }
+        }
+        .hero__subtitle {
+            font-size: 1.3em;
+            display: block;
+            vertical-align: middle;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            .animation-cropper {
+                overflow: hidden;
+                display: -ms-inline-flexbox;
+                display: inline-flex;
+            }
+        }
+        .hero__link {
+            margin-top: 15px;
+            position: relative;
+            display: block;
+            .animation-cropper {
+                overflow: hidden;
+                display: -ms-inline-flexbox;
+                display: inline-flex;
+                a {
+                    position: relative;
+                    overflow: hidden;
+                    transition: background .2s ease 0s;
+                    line-height: 1.42;
+                    text-decoration: none;
+                    text-align: center;
+                    white-space: normal;
+                    font-size: 13px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: .3em;
+                    display: inline-block;
+                    padding: 11px 20px;
+                    margin: 0;
+                    width: auto;
+                    min-width: 90px;
+                    vertical-align: middle;
+                    cursor: pointer;
+                    border: 1px solid transparent;
+                    -webkit-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    border-radius: 0;
+                    color: #fff;
+                    background: #111;
+                }
+            }
+        }
+    }
+}

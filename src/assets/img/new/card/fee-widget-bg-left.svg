@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105" height="364" viewBox="0 0 105 364">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.06" y1="0.457" x2="0.717" y2="0.772" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2962ff"/>
+      <stop offset="1" stop-color="#66a9f8"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="clipper" width="105" height="364" transform="translate(3697 8404)" fill="url(#linear-gradient)"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x1="1.256" y1="0.737" x2="0.068" y2="0.728" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#EC5328"/>
+      <stop offset="1" stop-color="#ea6a1b"/>
+    </linearGradient>
+  </defs>
+  <g id="fee-widget-bg-left" transform="translate(-3697 -8404)" clip-path="url(#clip-path)">
+    <path id="curvy" d="M244.841.921c26.911,0,47.462,49.119,50.886,80,3.163,28.535-9.523-33.18-43.265-25.74s-49.814,45.436-85.8,51.382S105.583,80.538,61.808,69.457C31.538,61.794-9.85,80.82-40.789,74.628c-34.457-4.01-63.824-20.051-71.283-37.816S-101.562,7.549-93.055,3.66C-28.912-25.662,226.326.921,244.841.921Z" transform="translate(3692.901 8651.984) rotate(-90)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>
