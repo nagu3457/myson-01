@@ -2,17 +2,14 @@
     min-height: 60px;
     // padding: 10px;
     background: #3f51b5;
-    color: #fff;
-    background-color: #263238;
-    background-color: #393939;
-    background-color: #121212;
-    background-color: #111111;
+    color: #12424d;
     background-image: url(/assets/img/new/project_create_illo_end@2x.png);
     background-size: 25%;
     background-repeat: no-repeat;
     background-position: right bottom;
     background-color: #1a73e8;
-    background: url(/assets/img/new/film_grain.png), linear-gradient(to bottom, #1a73e8, #1a73e8);
+    background: #f5f7fa;
+    // background: url(/assets/img/new/film_grain.png), linear-gradient(to bottom, #1a73e8, #1a73e8);
     // background: url(/assets/img/new/film_grain.png), linear-gradient(to bottom, #263238, #263238);
     // border-top-left-radius: 30px;
     // border-top-right-radius: 30px;
@@ -40,7 +37,7 @@
             list-style: none;
             padding: 0;
             a {
-                color: #fff;
+                color: #12424d;
                 line-height: 28px;
                 padding: 0;
                 text-decoration: none;
@@ -51,7 +48,7 @@
             margin: 0;
             opacity: .54;
             a{
-                color: #fff;
+                color: #12424d;
                 font-weight: 400;
                 padding: 0;
                 text-decoration: none;
@@ -70,11 +67,14 @@
         padding: 0px;
         li {
             display: inline-block;
-            padding: 17px;
+            padding: 10px;
+            &:first-child {
+                padding-left: 0px;
+            }
         }
         .fa {
-            font-size: 40px;
-            color: #fff;
+            font-size: 30px;
+            color: #12424d;
         }
         .fa-home:before {
             content: "\f015";
@@ -133,11 +133,11 @@
                 color: #404040;
                 // text-align: center;
                 .list-heading {
-                    font-size: 1.125rem;
+                    font-size: .9375rem;
                     margin-top: 0;
-                    color: #404040;
-                    color: #D2D2D2;
                     font-weight: 600;
+                    color: #585b5c;
+                    color: #12424d;
                 }
                 li {
                     list-style-type: none;
@@ -158,10 +158,11 @@
                             font-weight: 400;
                             color: #D2D2D2;
                             cursor: pointer;
+                            color: #585b5c;
                             -webkit-transition: color .4s;
                             transition: color .4s;
                             &:hover {
-                                color: #ffffff;
+                                color: #2c2d2e;
                             }
                         }
                     }
@@ -176,6 +177,7 @@
     max-width: 855pt;
     margin: 0px auto;
     text-align: left;
+    padding-top: 0px;
     .copyrt {
         font-size: 12px;
     }
@@ -245,6 +247,7 @@
         background-image: linear-gradient(179deg, rgb(222, 252, 189) 27%, white 96%);
         background: linear-gradient(90deg, #f75878 0%, #f7635b 38.39%, #fbb03b 100%);
         background: url(/assets/img/new/film_grain.png), linear-gradient(to bottom, #1a73e8, #1a73e8);
+        background: #f5f7fa;
         .row {
             display: -ms-flexbox;
             display: flex;
@@ -254,6 +257,7 @@
             margin-left: -15px;
             .text-white {
                 color: #fff;
+                color: #12424d;
             }
             li {
                 list-style: none;
@@ -268,6 +272,7 @@
                 }
                 span {
                     color: #fff;
+                    color: #12424d;
                     font-size: 18px;
                     font-weight: 500;
                 }
@@ -329,6 +334,7 @@
                     font-weight: 500;
                     border-radius: 5px;
                     color: #ffffff;
+                    color: #12424d;
                     border: 1px solid transparent;
                     font-size: 15px;
                     padding: 10px 35px;
