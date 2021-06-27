@@ -63,6 +63,127 @@ section {
     }
 }
 
+
+.about-new-hero {
+    background-image:url(/assets/img/new/story_image.jpg);
+    background-image:url(/assets/img/nature.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    .pl-50 {
+        padding-left:50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        max-width: 600px;
+        .dc-text--headline {
+            font-size: 2.75rem;
+            line-height: 1.25;
+            margin: 0px;
+            color: var(--dc-theme-white);
+        }
+        .dc-theme-white {
+            color: #fff;
+            color: var(--dc-theme-white);
+            border-color: #fff;
+            border-color: var(--dc-theme-white);
+        }
+    }
+}
+
+.add__wards {
+    position: relative;
+    width: 100%;
+    display: flex;
+    max-width: 855pt;
+    margin: 0px auto;
+    .fusion-row {
+        width: 100%;
+        .fusion-layout-column {
+            margin-top: 0px;
+            margin-bottom: 10px;
+            width: calc(22%);
+            margin-right: 4%;
+            visibility: visible;
+            animation-duration: 0.4s;
+            position: relative;
+            float: left;
+            z-index: 2000;
+            &:last-child {
+                margin-right: 0px;
+            }
+            .fusion-column-wrapper {
+                position: relative;
+                z-index: 3;
+                pointer-events: none;
+                border-radius: 0px 0px 50px;
+                padding: 10% 10% 5%;
+                min-height: 505px;
+                .fusion-column-content-centered {
+                    margin-top: 270px;
+                    .fusion-column-content {
+                        h4 {
+                            color: #FFFFFF;
+                            font-size: 22px;
+                            text-align: center;
+                        }
+                        .fusion-button-wrapper {
+                            display: block;
+                            text-align: center;
+                            a {
+                                border-color: #c48a10;
+                                border-width: 1px;
+                                border-style: solid;
+                                border-radius: 0px;
+                                background: rgba(0,0,0,0.52);
+                                padding: 9px 20px;
+                                font-size: 12px;
+                                text-decoration: none;
+                                .fusion-button-text {
+                                    color: #ffffff;
+                                    text-transform: uppercase;
+                                    font-weight: bold;
+                                }
+                            }
+                            &:hover {
+                                a {
+                                    background: rgba(0,0,0,0.65);
+                                    .fusion-button-text {
+                                        color: #c48a10;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .fusion-column-inner-bg {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                span {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .fusion-column-inner-bg-image {
+                    background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.66) 100%),url(/assets/img/economic.jpg);
+                    background-position: left top;
+                    background-repeat: no-repeat;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                    border-radius: 0px 0px 50px 0px;
+                }
+            }
+        }
+    }
+}
+
 .home-banner-view {
     width: 100%;
     // max-width: 1000px;
@@ -350,4 +471,111 @@ ul.multiline li {
     background-repeat: no-repeat;
     background-position: center center;
     background-origin: content-box;
+}
+
+.process-section {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 750px !important;
+    padding: 59px 0;
+    padding-top: 0px;
+    display: block;
+    position: relative;
+    width: 100%;
+    .showing {
+        .bg-overlay-x {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #000;
+            opacity: 0;
+        }
+        .bg-content {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            .process-wrap {
+                display: block;
+                float: left;
+                min-height: 28px;
+                width: 25%;
+                &:first-child {
+                    margin-left: 0;
+                }
+                .service-item {
+                    width: 100%;
+                    margin: 0;
+                    position: relative;
+                    text-align: center;
+                    cursor: pointer;
+                    z-index: 10;
+                    height: 750px;
+                    .darken {
+                        background: none repeat scroll 0 0 #000000;
+                        height: 100%;
+                        opacity: 0.2;
+                        width: 100%;
+                    }
+                    .service-item-inner {
+                        display: table;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: rgba(252,220,75, 0.80);
+                        vertical-align: middle;
+                        background: transparent;
+                        &:hover {
+                            background: none repeat scroll 0 0 rgba(252, 220, 75, 0.8);
+                        }
+                        .service-wrap {
+                            width: 100%;
+                            height: 100%;
+                            display: table-cell;
+                            position: relative;
+                            -moz-box-sizing: border-box;
+                            box-sizing: border-box;
+                            vertical-align: middle;
+                            overflow: hidden;
+                            padding-bottom: 0 !important;
+                            .service-icon {
+                                font-size: 45px;
+                                color: #fff;
+                                .fa-lightbulb-o {
+                                    &:before {
+                                        content: "\f0eb";
+                                    }
+                                }
+                                .fa-pencil {
+                                    &:before {
+                                        content: "\f040";
+                                    }
+                                }
+                                .fa-code {
+                                    &:before {
+                                        content: "\f121";
+                                    }
+                                }
+                                .fa-rocket {
+                                    &:before {
+                                        content: "\f135";
+                                    }
+                                }
+                            }
+                            .service-title {
+                                font-size: 24px;
+                                transition: all 0.55s cubic-bezier(0.300, 0.000, 0.580, 1.000);
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
