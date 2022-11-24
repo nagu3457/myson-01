@@ -24,7 +24,7 @@ import { UxDesignComponent } from './modules/ux-design/ux-design.component';
 import { UiDevelopmentComponent } from './modules/ui-development/ui-development.component';
 import { InterfaceDesignComponent } from './modules/interface-design/interface-design.component';
 import { MobileAppDevelopmentComponent } from './modules/mobile-app-development/mobile-app-development.component';
-
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -55,7 +55,8 @@ import { MobileAppDevelopmentComponent } from './modules/mobile-app-development/
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    CarouselModule
+    CarouselModule,
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

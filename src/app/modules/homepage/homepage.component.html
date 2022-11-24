@@ -1,17 +1,19 @@
 <app-header></app-header>
 <div class="homepage comman-pages">
-    <div class="about-new-hero pb-100 pt-100">
+    <div class="about-new-hero pb-100 pt-100 comman-pages-next">
         <div class="pl-50">
             <div class="home-text-container et_pb_text_0">
-                <h1 class="dc-text--headline">Ready to get started?</h1>
+                <h1 style="color: #e3e3e3;">Empowering companies at the intersection of</h1>
+                <div class="dc-text--headline">UX DESIGN, DEVELOPMENT, & BUSINESS</div>
                 <div class="separator  small left  "></div>
-                <h1>We listen, adapt and deliver.</h1>
-                <p><span class="dc-theme-white new-home-subhead">Leading web presence solutions
-                        provider serving millions of small-to-medium businesses globally. </span></p>
+                <h1 style="color: #e3e3e3;">We listen, adapt and deliver.</h1>
+                <!-- <p><span class="dc-theme-white new-home-subhead">Leading web presence solutions
+                        provider serving millions of small-to-medium businesses globally. </span></p> -->
             </div>
         </div>
     </div>
-    <section style="background-image: url(/assets/img/process-bg.jpg);" class="page-section dark-bg image-color-bg process-section row-fluid" id="process">
+    <section style="background-image: url(/assets/img/process-bg.jpg);"
+        class="page-section dark-bg image-color-bg process-section row-fluid" id="process">
         <div class="showing">
             <div class="bg-overlay-x"></div>
             <div class="bg-content">
@@ -124,6 +126,56 @@
     </section>
 
     <section class="pt-50 pb-50 animated fadeInUp" style="background-image: url(/assets/img/d4.jpg)">
+        <div class="right-mnk-title">
+            <div class="container-custom">
+                <div class="title-c">
+                    <div data-aos="zoom-in-left" class="left-block left-wowo left-h2 wowo-active">
+                        <div class="top-head">OUR WORK, YOUR SOLUTIONS</div>
+                        <h2><span>CODAL IS YOUR SHOPIFY PLUS AGENCY</span></h2>
+                    </div>
+                    <!-- <div class="right-block">
+                        <div class="show-tablet menu-here">
+                            <div class="menu-item active"><a href="#">contap</a></div>
+                            <div class="menu-item"><a href="#">call potential</a></div>
+                            <div class="menu-item"><a href="#">m&amp;m merchandisers</a></div>
+                            <div class="menu-item"><a href="#">charles schwab</a></div>
+                        </div>
+                        <div class="show-mobile menu-here slick-initialized slick-slider" style="">
+                            <div class="slick-list draggable">
+                                <div class="slick-track"
+                                    style="opacity: 1; width: 20000px; transform: translate3d(0px, 0px, 0px);">
+                                    <div class="slick-slide slick-current slick-active" data-slick-index="0"
+                                        aria-hidden="false">
+                                        <div>
+                                            <div class="menu-item" style="width: 100%; display: inline-block;"><a
+                                                    href="#" tabindex="0">contap</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1">
+                                        <div>
+                                            <div class="menu-item" style="width: 100%; display: inline-block;"><a
+                                                    href="#" tabindex="-1">call potential</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1">
+                                        <div>
+                                            <div class="menu-item" style="width: 100%; display: inline-block;"><a
+                                                    href="#" tabindex="-1">m&amp;m merchandisers</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1">
+                                        <div>
+                                            <div class="menu-item" style="width: 100%; display: inline-block;"><a
+                                                    href="#" tabindex="-1">charles schwab</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="webdeveloper-slider">
                 <div class="webdevslider-content text-center">
@@ -581,13 +633,38 @@
             <div class="btn">let's contact</div>
         </div>
     </section>
-    <!-- <section id="hero" class="pb-50 lets-connect">
-        <div class="itl teaser text-center">
+    <section id="hero" class="pb-50 lets-connect">
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+            (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+            (beforeChange)="beforeChange($event)">
+            <div ngxSlickItem *ngFor="let slide of slidesStore" class="slide">
+                <section id="banner2" data-id="section_580462309"
+                    class=" pt-50 pb-50 ptMobile-25 pbMobile-25 bgp-d-tl bgp-m-tl">
+                    <div class="container">
+                        <div class="itl teaser11">
+                            <div class="has-image">
+                                <div class="cmp-itl__content ">
+                                    <div class="itl__contentHeight" style="height:px;">
+                                        <h1 style="color:#f1f1f1" class="dc-text--headline">{{slide.text1}}</h1>
+                                        <p style="color:#f1f1f1">{{slide.text2}}</p>
+                                        <p>&nbsp;</p>
+                                    </div>
+                                </div>
+                                <div data-aos="zoom-out-up" class="cmp-itl__image banner-scroll">
+                                    <img [src]="slide.src">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </ngx-slick-carousel>
+        <!-- <div class="itl teaser text-center">
             <h1>got a project?</h1>
             <p class="et_pb_gutters3">Whether you need a new website or some help with your social media we are ready to
                 start the conversation.</p>
             <div class="btn">let's contact</div>
-        </div>
-    </section> -->
+        </div> -->
+    </section>
 </div>
 <app-footer class="scotchy-footer"></app-footer>

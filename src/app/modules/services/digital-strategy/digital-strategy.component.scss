@@ -1,0 +1,94 @@
+section {
+    // padding: 30px;
+    &.custom-bg {
+        background-color: var(--dc-theme-qua--light2);
+    }
+    .container {
+        max-width: 855pt;
+        margin: 0px auto;
+        .has-image {
+            flex-direction: row-reverse;
+            display: flex;
+            align-items: center;
+            .mdc-theme-secondary, .mdc-theme-secondary a {
+                color: #1164f3;
+                color: var(--mdc-theme-secondary);
+                border-color: #1164f3;
+                border-color: var(--mdc-theme-secondary);
+            }
+            .cmp-itl__content, .cmp-itl__image {
+                -ms-flex-preferred-size: 50%;
+                flex-basis: 50%;
+                padding-left: 15px;
+                img {
+                    max-width: 100%;
+                    border-radius: 4px;
+                    display: block;
+                    margin: 0px auto;
+                }
+            }
+            .dc-text--headline {
+                font-size: 2.75rem;
+                line-height: 1.25;
+            }
+        }
+    }
+}
+
+.custom-bbg {
+    position: relative;
+    background: transparent;
+    padding-bottom: 0;
+    min-height: 400px;
+    width: 100%;
+    &:before {
+        content: "";
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        transform: skewY(-5deg);
+        transform-origin: 0;
+        height: 100%;
+        z-index: -1;
+        background: #fbc02d no-repeat top;
+        background: #ffc1a1 no-repeat top;
+        background-size: cover;
+        min-height: 400px;
+        width: 100%;
+    }
+}
+
+.responsivecolumns {
+    .leftColumn, .rightColumn {
+        border-radius: 19px;
+        // height: 100%;
+        .seo-section {
+            padding: 30px;
+            background-color: #E7EFFE;
+            border-radius: 2px;
+            margin: 10px;
+            // height: 100%;
+            .image {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.date-widget {
+    background-color: #FFF;
+    background-image: url(/assets/img/new/card/fee-widget-bg-left.svg),url(/assets/img/new/card/fee-widget-bg-right.svg);
+    background-repeat: no-repeat;
+    background-position: -10px top, right top;
+    position: relative;
+    border-radius: 10px;
+    max-width: 520px;
+    margin-bottom: 30px;
+    padding: 15px 0 10px;
+}
+
+section {
+    .container-custom {
+        max-width: 90%;
+    }
+}

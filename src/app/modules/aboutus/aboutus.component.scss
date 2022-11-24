@@ -1,6 +1,7 @@
 .about-new-hero {
     background-image:url(/assets/img/new/story_image.jpg);
     background-image:url(/assets/img/nature.jpg);
+    background-image: url(/assets/new_img/yoga_mountains.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -166,7 +167,7 @@ section {
     .our-strenth {
         background: #f9faf9;
         max-width: 296px;
-        height: 338px;
+        height: 300px;
         border-radius: 4px;
         -webkit-box-shadow: 3px 3px 12px 0 rgb(0 0 0 / 10%);
         box-shadow: 3px 3px 12px 0 rgb(0 0 0 / 10%);
@@ -179,6 +180,7 @@ section {
         overflow: hidden;
         -webkit-transition: 0.5s;
         transition: 0.5s;
+        background: #1a2552;
         &:after {
             content: "";
             position: absolute;
@@ -228,8 +230,6 @@ section {
             transform: translateY(-10px);
         }
         h3 {
-            margin: 0 0 28px;
-            height: 50px;
             color: #666;
             font-family: inherit;
             font-size: 22px;
@@ -237,10 +237,9 @@ section {
             text-align: center;
         }
         p {
-            color: #999;
+            color: #777;
             font-family: inherit;
-            font-size: 18px;
-            line-height: 35px;
+            font-size: 16px;
         }
     }
 }

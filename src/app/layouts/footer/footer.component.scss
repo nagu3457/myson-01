@@ -7,6 +7,7 @@
     background-size: 25%;
     background-repeat: no-repeat;
     background-position: right bottom;
+    background: linear-gradient(90deg ,#7530a6,#333295);
     background-color: #1a73e8;
     background: #f5f7fa;
     // background: url(/assets/img/new/film_grain.png), linear-gradient(to bottom, #1a73e8, #1a73e8);
@@ -25,6 +26,12 @@
     background-size: 25%;
     background-repeat: no-repeat;
     background-position: right bottom;
+    // background-color: #f3f4fd;
+    // background-image: url(https://uploads-ssl.webflow.com/5ce10a4c0b5f0b05f522e746/61f9aaf3889ff64e10afad3e_bg-blur-colors-top-light.jpg);
+    // background-position: 50% 0;
+    // background-size: auto;
+    // background-repeat: no-repeat;
+    // background-attachment: scroll;
     .mdl-cell {
         img {
             vertical-align: middle;

@@ -1,4 +1,5 @@
 .header-top {
+    box-shadow: 0 4px 13px 0 rgb(0 0 0 / 10%);
     .header-bg {
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -11,6 +12,8 @@
         transition-duration: .2s;
         transition-timing-function: cubic-bezier(.4,0,.2,1);
         transition-property: max-height,box-shadow;
+        background: #fff;
+        z-index: 1;
         // background: #3f51b5;
         // color: #fff;
         padding: 20px 0px;
